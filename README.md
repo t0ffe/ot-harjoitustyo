@@ -11,4 +11,4 @@ This repo if for **HY**'s course *Ohjelmistotekniikka, syksy 2022*.
 
 ### Viikko 2
 
-- *TODO*
+- **TODO**
