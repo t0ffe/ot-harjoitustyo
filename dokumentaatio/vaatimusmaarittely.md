@@ -10,8 +10,19 @@ Alkuvaiheessa sovelluksella on ainoastaan yksi käyttäjärooli, _myyjä_. Myöh
 
 ## Käyttöliittymäluonnos
 
-**WIP**
-![](./kuvat/kayttoliittyma-hahmotelma.png)
+```
+ .----------------.             .----------------.             .----------------. 
+| .--------------. |           | .--------------. |           | .--------------. |
+| |              | |           | |              | |           | |              | |
+| |              | |           | |              | |   ---->   | |              | |
+| |   Käyttäjän  | |           | |    Näkymä    | |           | |    Merkin    | |
+| |    valinta   | |   ---->   | |   kaikista   | |           | |   muokkaus   | |
+| |              | |           | |   merkeistä  | |   <----   | |              | |
+| |              | |           | |              | |           | |              | |
+| |              | |           | |              | |           | |              | |
+| '--------------' |           | '--------------' |           | '--------------' |
+ '----------------'             '----------------'             '----------------' 
+```
 
 ## Perusversion tarjoama toiminnallisuus
 
