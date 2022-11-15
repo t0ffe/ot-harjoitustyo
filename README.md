@@ -11,4 +11,10 @@ This repo if for **HY**'s course *Ohjelmistotekniikka, syksy 2022*.
 
 ### Viikko 2
 
+- [vaatimusmaarittely](dokumentaatio/vaatimusmaarittely.md)
+- [työaikakirjanpito](dokumentaatio/tuntikirjanpito.md)
+
+
+### Viikko 3
+
 - **TODO**
