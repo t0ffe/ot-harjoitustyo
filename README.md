@@ -17,4 +17,4 @@ This repo if for **HY**'s course *Ohjelmistotekniikka, syksy 2022*.
 
 ### Viikko 3
 
-- **TODO**
+- [changelog](changelog.md)
