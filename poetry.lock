@@ -54,7 +54,7 @@ python-versions = "*"
 name = "invoke"
 version = "1.7.3"
 description = "Pythonic task execution"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -123,7 +123,7 @@ python-versions = ">=3.7"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "56c37d61be85251e18a78a053da69c4c5da27b1cbf08c97574d8acf91210ef7c"
+content-hash = "ef483ad4c831eb7c0e4e1af4575fba3dda8e90910547eb5316442adda833bd07"
 
 [metadata.files]
 attrs = [
