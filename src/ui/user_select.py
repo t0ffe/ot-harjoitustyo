@@ -1,9 +1,10 @@
 from tkinter import ttk, constants
 
+
 class UserSelect:
     """Käyttäjän valitsemisesta vastaava näkymä."""
 
-    def __init__(self, root, show_opiskelija_view, show_myyja_view ):
+    def __init__(self, root, show_opiskelija_view, show_myyja_view):
 
         self._root = root
         self._frame = None

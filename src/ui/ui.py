@@ -24,8 +24,8 @@ class UI:
         self._hide_current_view()
 
         self._current_view = UserSelect(
-            self._root, 
-            self._show_opiskelija_view, 
+            self._root,
+            self._show_opiskelija_view,
             self._show_myyja_view
         )
 
@@ -48,4 +48,3 @@ class UI:
         )
 
         self._current_view.pack()
-

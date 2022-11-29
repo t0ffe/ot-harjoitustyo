@@ -1,4 +1,5 @@
-from tkinter import  ttk, constants
+from tkinter import ttk, constants
+
 
 class Opiskleija_view:
     def __init__(self, root):
@@ -6,7 +7,7 @@ class Opiskleija_view:
         self._frame = None
 
         self._initialize()
-    
+
     def pack(self):
         self._frame.pack(fill=constants.X)
 
@@ -17,7 +18,6 @@ class Opiskleija_view:
         self._frame = ttk.Frame(master=self._root)
 
         wip = ttk.Label(master=self._frame, text="OPISKELIJA NÄKYMÄ WIP")
-
 
         self._frame.grid_columnconfigure(0, weight=1)
 

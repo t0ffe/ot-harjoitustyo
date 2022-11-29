@@ -6,6 +6,7 @@ from ui.user_select import UserSelect
 from tkinter import Tk
 from ui.ui import UI
 
+
 class TestGeneralWindowSettings(unittest.TestCase):
 
     def setUp(self):
@@ -18,7 +19,9 @@ class TestGeneralWindowSettings(unittest.TestCase):
         print(self.ui_view)
 
     def test_window_title(self):
-        self.assertEqual(self.window.title() ,"Merkkien hallinta sovellus test")
+        self.assertEqual(self.window.title(),
+                         "Merkkien hallinta sovellus test")
 
     def test_window_size(self):
-        self.assertEqual(self.window.size() ,(0,0)) # beacause window is neve spawned so it's size is 0,0
+        # beacause window is neve spawned so it's size is 0,0
+        self.assertEqual(self.window.size(), (0, 0))
