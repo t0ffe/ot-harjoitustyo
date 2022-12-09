@@ -18,6 +18,12 @@ class UserSelect:
 
     def destroy(self):
         self._frame.destroy()
+        
+    def _handle_opiskelija(self):
+        self._show_opiskelija_view()
+
+    def _handle_myyja(self):
+        self._show_myyja_view()
 
     def _initialize(self):
         self._frame = ttk.Frame(master=self._root)
@@ -37,9 +43,4 @@ class UserSelect:
 
         end_user.grid(padx=5, pady=5, sticky=constants.EW)
         merchant.grid(padx=5, pady=5, sticky=constants.EW)
-
-    def _handle_opiskelija(self):
-        self._show_opiskelija_view()
-
-    def _handle_myyja(self):
-        self._show_myyja_view()
+        
