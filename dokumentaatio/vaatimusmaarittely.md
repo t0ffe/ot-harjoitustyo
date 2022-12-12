@@ -2,11 +2,11 @@
 
 ## Sovelluksen tarkoitus
 
-Sovelluksen avulla käyttäjien on mahdollista pitää kirjaa myymistään tuotteista (haalarimerkeistään). 
+Sovelluksen avulla käyttäjien on mahdollista hallinnoida salasanojaan. 
 
 ## Käyttäjät
 
-Alkuvaiheessa sovelluksella on ainoastaan yksi käyttäjärooli, _myyjä_. Myöhemmin sovellukseen saatetaan lisätä _opiskelija_, joka on merkkien ostaja.
+Soveluksesssa on vain yksi lokaali käyttäjä mutta useampi mode (gerenointi / vahvuus / selailu)
 
 ## Käyttöliittymäluonnos
 
@@ -26,35 +26,28 @@ Alkuvaiheessa sovelluksella on ainoastaan yksi käyttäjärooli, _myyjä_. Myöh
 
 ## Perusversion tarjoama toiminnallisuus
 
-### Ennen käyttäjän valintaa
+### Generointi
 
-- Käyttäjä voi valita olevansa myyjä (tai opiskelija)
+- Voit genroida salasanan
+  - passphrase
+  - password
+  - oma
+- parametrejä
+  - pituus
+  - sanojen määrä
+  - mitä kirjainsettejä ([a-z], [A-Z], [0-9], [erikoismerkit], jne)
 
-### Käyttäjän valinnan jälkeen
+### Vahvuus
 
-- Käyttäjä näkee inventaarion merkeistä, joita tällä hetkellä on _varastossa_
-  - Voit lisätä merkkejä bulkki määrä (+10 / +50 / +100 / jne.)
-  - Voit "myydä" merkkejä (-1 / -5 / -10 / jne.)
-- Jokaisella merkillä on hintansa, määrä ja kuva
-- Sisältää kuvan ja merkin nimen
-- Merkin muokkaus
-  - Hinta
-  - Kuva
-  - Nimi
-
+- Annat salasanan ja ohjelma kertoo nko se vahva
+  - Pituus
+  - merkit
+  - toistuvuus(?)
 
 ## Jatkokehitysideoita
 
 Perusversion jälkeen järjestelmää täydennetään ajan salliessa esim. seuraavilla toiminnallisuuksilla:
 
-- Merkkien järjestely erinäisiin järjestyksiin 
-  - Milloin saapunut
-  - Määrä
-  - Hinta
-  - Nimi
-- Merkkien myyntihistoria
-
-- Opiskelijan näkymä jossa:
-  - Mitä merkkejä omistat
-  - Mihin ne on kiinnitetty haalareissasi
-    - mahd. generoitu linkki / kuva / teksti josta nämä käy ilmi, jonka voi jakaa
+- Salasanan vahvuuden paranatamis vinkkejä
+- Salasanojen selaaminen
+- salasana tiedoston salaus
