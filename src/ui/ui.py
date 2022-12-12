@@ -1,50 +1,17 @@
-from ui.user_select import UserSelect
-from ui.myyja_view import Myyja_view
-from ui.opiskelija_view import Opiskleija_view
+import getpass
 
+def fancy_input():
+  print("\n╔═══════════════════════════╗")
+  print("║ Welcome to password-sword ║")
+  print("╚═══════════════════════════╝\n")
+  input_text = getpass.getpass("Enter something fancy: ")
+  head = input_text[:2]
+  tail = input_text[-2:]
+  dot = "*"
+  if len(input_text) > 5:
+    print(f"\n You entered: {head}{(len(input_text)-4)*dot}{tail}\n")
+  else:
+    print(f"\n You entered: {len(input_text)*dot}\n")
 
-class UI:
-    """Sovelluksen käyttöliittymästä vastaava luokka."""
-
-    def __init__(self, root):
-
-        self._root = root
-        self._current_view = None
-
-    def start(self):
-        self._show_user_select()
-
-    def _hide_current_view(self):
-        if self._current_view:
-            self._current_view.destroy()
-
-        self._current_view = None
-
-    def _show_user_select(self):
-        self._hide_current_view()
-
-        self._current_view = UserSelect(
-            self._root,
-            self._show_opiskelija_view,
-            self._show_myyja_view
-        )
-
-        self._current_view.pack()
-
-    def _show_myyja_view(self):
-        self._hide_current_view()
-
-        self._current_view = Myyja_view(
-            self._root
-        )
-
-        self._current_view.pack()
-
-    def _show_opiskelija_view(self):
-        self._hide_current_view()
-
-        self._current_view = Opiskleija_view(
-            self._root
-        )
-
-        self._current_view.pack()
+if __name__ == "__main__":
+    fancy_input()
