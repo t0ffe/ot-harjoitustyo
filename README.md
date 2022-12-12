@@ -1,7 +1,7 @@
 
-# Merkkien hallinta sovellus
+# Salasanan hallinta sovellus
 
-Sovelluksen avulla käyttäjien on mahdollista pitää kirjaa myymistään tuotteista (haalarimerkeistään). 
+Sovelluksen avulla käyttäjien on mahdollista luoda salasanoja, tarkistaa onko salasana turvallinen ja säilöä niitä. 
 
 
 ## Dokumentaatio
