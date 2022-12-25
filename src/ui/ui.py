@@ -60,14 +60,14 @@ class UI:
             if input_text in keywords_generate:
                 UI.clear()
 
-                pwd_length = input("How long password do you want? \n")
+                pwd_length = input("How many characters should the password be? \n")
                 while not pwd_length.isnumeric():
                     if pwd_length in keywords_quit:
                         UI.clear()
                         UI.print_slowly("bye bye")
                         return False
                     print("Sorry but that is not a number")
-                    pwd_length = input("plz input number:   ")
+                    pwd_length = input("Please input a valid number:   ")
 
                 charset = set()
                 print("What characters would you like to use? \n")
