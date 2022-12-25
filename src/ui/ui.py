@@ -39,9 +39,13 @@ class UI:
                 print(
                     f"use {keywords_validate} to see if your password is strong")
                 print(
+                    f"\n---WIP---")
+                print(
                     f"\nuse {keywords_input} to add a password to the database")
                 print(
                     f"use {keywords_browse} to browse passwords in the database")
+                print(
+                    f"\n---WIP---")
                 print(f"\nuse {keywords_quit} to quit this program")
 
             if input_text in keywords_input:
@@ -69,7 +73,7 @@ class UI:
                 print("What characters would you like to use? \n")
                 print("1. [A-Z]")
                 print("2. [a-z]")
-                print("3. [0-9]")
+                print("3. [0-9] \n")
 
                 charset_select = input()
 
