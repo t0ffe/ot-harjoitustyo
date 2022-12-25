@@ -2,11 +2,11 @@
 
 ## Sovelluksen tarkoitus
 
-Sovelluksen avulla käyttäjien on mahdollista hallinnoida salasanojaan. 
+Sovelluksen avulla käyttäjien on mahdollista luoda ja hallinnoida salasanojaan sekä varmistaa niiden turvallisuus. 
 
 ## Käyttäjät
 
-Soveluksesssa on vain yksi lokaali käyttäjä mutta useampi mode (gerenointi / vahvuus / selailu)
+Sovelluksesssa on vain yksi lokaali käyttäjä mutta useampi mode (generointi / vahvuus / selailu)
 
 ## Käyttöliittymäluonnos
 
@@ -28,7 +28,7 @@ Soveluksesssa on vain yksi lokaali käyttäjä mutta useampi mode (gerenointi / 
 
 ### Generointi
 
-- Voit genroida salasanan
+- Voit generoida salasanan
   - passphrase
   - password
   - oma
@@ -39,7 +39,7 @@ Soveluksesssa on vain yksi lokaali käyttäjä mutta useampi mode (gerenointi / 
 
 ### Vahvuus
 
-- Annat salasanan ja ohjelma kertoo nko se vahva
+- Annat salasanan ja ohjelma kertoo onko se vahva
   - Pituus
   - merkit
   - toistuvuus(?)
@@ -48,6 +48,7 @@ Soveluksesssa on vain yksi lokaali käyttäjä mutta useampi mode (gerenointi / 
 
 Perusversion jälkeen järjestelmää täydennetään ajan salliessa esim. seuraavilla toiminnallisuuksilla:
 
-- Salasanan vahvuuden paranatamis vinkkejä
+- Salasanan vahvuuden parantamisvinkkejä
 - Salasanojen selaaminen
-- salasana tiedoston salaus
+- Salasanojen ryhmittely
+- Salasanatiedoston salaus
