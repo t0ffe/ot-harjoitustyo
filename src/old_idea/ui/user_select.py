@@ -18,7 +18,7 @@ class UserSelect:
 
     def destroy(self):
         self._frame.destroy()
-        
+
     def _handle_opiskelija(self):
         self._show_opiskelija_view()
 
@@ -43,4 +43,3 @@ class UserSelect:
 
         end_user.grid(padx=5, pady=5, sticky=constants.EW)
         merchant.grid(padx=5, pady=5, sticky=constants.EW)
-        

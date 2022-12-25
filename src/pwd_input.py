@@ -1,5 +1,6 @@
 import getpass
 
+
 class PasswordInput:
     def password_input():
         input_text = getpass.getpass("Write your password: ")

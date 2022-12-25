@@ -2,7 +2,7 @@ import uuid
 
 
 class Merkki:
-   
+
     def __init__(self, nimi, maara, hinta, kuva, merkki_id=None):
 
         self.nimi = nimi
