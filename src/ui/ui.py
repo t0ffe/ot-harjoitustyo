@@ -23,7 +23,7 @@ class UI:
             input_text = input("What would you like to do: ")
 
             if input_text not in keywords_all:
-                print("Sorry, but that isn't a valid input. Please enter a valid input or type help to see all the valid commands.")
+                print("Sorry, but that isn't a valid input. Please enter a valid input or type 'help' to see all the valid commands.")
 
             if input_text in keywords_help:
                 UI.clear()
@@ -56,7 +56,7 @@ class UI:
                 UI.clear()
                 print("list of passwords")
 
-        print("Sorry, but that isn't a valid input. Please enter a valid input or type help to see all the valid commands.")
+        print("Sorry, but that isn't a valid input. Please enter a valid input or type 'help' to see all the valid commands.")
 
     def clear():
 
