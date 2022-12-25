@@ -1,5 +1,5 @@
 import unittest
-from pwd_checker import PasswordStrength
+from pwd_tools.pwd_checker import PasswordStrength
 
 
 class TestChecker(unittest.TestCase):

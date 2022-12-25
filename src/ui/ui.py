@@ -2,8 +2,8 @@ from os import system, name
 from time import sleep
 import sys
 import string
-import pwd_generator
-import pwd_checker
+import pwd_tools.pwd_generator as pwd_generator
+import pwd_tools.pwd_checker as pwd_checker
 
 keywords_help = {"h", "help", "man"}
 keywords_input = {"i", "input", "in"}
