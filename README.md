@@ -1,5 +1,5 @@
 
-# Salasanan hallinta sovellus
+# Salasanan hallintasovellus
 
 Sovelluksen avulla käyttäjien on mahdollista luoda salasanoja, tarkistaa onko salasana turvallinen ja säilöä niitä. 
 
