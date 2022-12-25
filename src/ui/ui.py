@@ -1,6 +1,9 @@
 from os import system, name
 from time import sleep
 import sys
+import string
+import pwd_generator
+import pwd_checker
 
 keywords_help = {"h", "help", "man"}
 keywords_input = {"i", "input", "in"}
@@ -46,27 +49,61 @@ class UI:
 
             if input_text in keywords_generate:
                 UI.clear()
-                print("generate")
+                
+                pwd_length = input("How long password do you want? \n")
+                while not pwd_length.isnumeric():
+                    if pwd_length in keywords_quit:
+                        UI.clear()
+                        UI.print_slowly("bye bye")
+                        return False
+                    print("Sorry but that is not a number")
+                    pwd_length = input("plz input number:   ")
+                    
+    
+                charset = set()
+                print("What characters would you like to use? \n")
+                print("1. [A-Z]")
+                print("2. [a-z]")
+                print("3. [0-9]")
+                
+                charset_select = input()
+                
+                UI.character_set_selection(charset_select, charset)
+                
+                if not charset_select.isnumeric() or len(charset) == 0:
+                    while not charset_select.isnumeric() or len(charset) == 0:
+                        print("please choose a corretct character set")
+                        charset_select = input()
+                        UI.character_set_selection(charset_select, charset)
+                
+
+                print(pwd_generator.generate_password(pwd_length, charset))
+
+                
+
 
             if input_text in keywords_validate:
                 UI.clear()
-                print("validate")
+            
+                password = input("Type your password to see if it's strong! \n")
+                pwd_checker.PasswordStrength.password_strength(password)
+
 
             if input_text in keywords_browse:
                 UI.clear()
                 print("list of passwords")
 
-        print("Sorry, but that isn't a valid input. Please enter a valid input or type help to see all the valid commands.")
+        print("Sorry, but that isn't a valid input. Please enter a valid input or type 'help' to see all the valid commands.")
 
     def clear():
 
-    	# for windows
-    	if name == 'nt':
-    		_ = system('cls')
+        # for windows
+        if name == 'nt':
+            _ = system('cls')
 
-    	# for mac and linux(here, os.name is 'posix')
-    	else:
-    		_ = system('clear')
+        # for mac and linux(here, os.name is 'posix')
+        else:
+            _ = system('clear')
 
 
     def print_slowly(text):
@@ -75,5 +112,14 @@ class UI:
             sys.stdout.flush()
             sleep(0.2)
         print("")
+        
+    def character_set_selection(charset_select, charset):
+        if "1" in charset_select:
+            charset.update(string.ascii_uppercase)
+        if "2" in charset_select:
+            charset.update(string.ascii_lowercase)
+        if "3" in charset_select:
+            charset.update([0,1,2,3,4,5,6,7,8,9,0])
+
 if __name__ == "__main__":
     UI.fancy_input()
